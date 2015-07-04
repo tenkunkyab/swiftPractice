@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var appsTableView: UITableView!
     
     override func viewDidLoad() {
-        searchItunesFor("JQ Software")
+        searchItunesFor("Whatsapp")
         super.viewDidLoad()
 
         // Do any additional setup after loading the view, typically from a nib.

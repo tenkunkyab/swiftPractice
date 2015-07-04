@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PVs-Dx-cF5">
-                                <rect key="frame" x="70" y="0.0" width="450" height="600"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PVs-Dx-cF5">
+                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="ygu-Yf-Ahq"/>
@@ -29,8 +28,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="PVs-Dx-cF5" secondAttribute="trailing" constant="59" id="6Rx-5u-5Cm"/>
-                            <constraint firstItem="PVs-Dx-cF5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="59" id="qCH-Rq-qhk"/>
+                            <constraint firstAttribute="trailing" secondItem="PVs-Dx-cF5" secondAttribute="trailing" id="6q0-8x-dn9"/>
+                            <constraint firstItem="PVs-Dx-cF5" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="AGc-PB-tqB"/>
+                            <constraint firstItem="PVs-Dx-cF5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="I4k-xD-5bu"/>
+                            <constraint firstItem="PVs-Dx-cF5" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="QzV-Bw-Y8p"/>
                         </constraints>
                     </view>
                     <connections>
